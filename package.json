@@ -34,6 +34,8 @@
     "dokku:push": "git push dokku master:master",
     "-----": "",
     "dokku:ssh-to-server": "ssh root@$npm_package_config_host",
-    "------": ""
+    "------": "",
+    "create:tar": "rm ./app/public/workspace.tar.gz ; tar --exclude=\"node_modules\" --exclude=\".nuxt\" --exclude=\".git\" -czf /tmp/workspace.tar.gz . && mv /tmp/workspace.tar.gz ./app/public/. && ls -lh ./app/public/workspace.tar.gz",
+    "-------": ""
   }
 }

@@ -1,5 +1,5 @@
 <template lang="pug">
 NuxtLayout
-  MainNav
-  NuxtPage
+    MainNav
+    NuxtPage
 </template>
